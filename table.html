@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>表格樣式</title>
+    <style>
+        .tb1 {
+            width: 800px;
+            border: 5px solid #BE77FF;
+            /*border-collapse:collapse;*/
+            border-spacing:0;
+            text-transform:capitalize;
+        }
+        td,th {
+            border: 1px dashed #BEBEBE;
+        }
+        thead {
+            background-color: #BF0060;
+            color:#ffffff;            
+        }
+        tbody {
+            background-color: #FFC1E0;
+            text-align:center;
+        }
+        tbody tr:nth-child(2n) {
+                background-color: #FF60AF;
+         }
+            tbody tr:nth-child(2n+1) {
+                background-color: #FFAAD5;
+            }
+            tbody tr:hover {
+                background-color: #FFECF5;
+            }            
+            tbody td:hover {
+                background-color: #FFC1E0;
+                font-size:5em;
+            }
+    </style>
+</head>
+<body>
+    <h2>div裡的文字對齊</h2>
+    <div style="width:150px;height:100px;border:1px solid green;line-height:100px">高度有指定</div>
+    <hr />
+    <div style="width:150px;border:1px solid green;padding-top:50px;padding-bottom:50px;"> 高度不指定</div>
+    <hr />
+    <table class="tb1">
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+            <tr>
+                <th colspan="2">column1</th>
+                <!--<th>column2</th>-->
+                <th colspan="2">column3</th>
+                <!--<th>column4</th>-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="3">2</td>
+                <!--<td>3</td>-->
+                <!--<td>4</td>-->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="3">2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!--<td>2</td>-->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!--<td>2</td>-->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS的使用--自訂樣式(class)</title>
+    <!--<link rel="stylesheet" href="styles/st1.css" />
+    <link rel="stylesheet" href="styles/font.css" />-->
+    <link rel="stylesheet" href="styles/link.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">-->
+    <style>
+      /*  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @font-face {
+            src: url(fonts/JustOldFashion.ttf);
+            font-family: font1;
+        }
+
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            src: url(fonts/SCRIPTIN.ttf);
+            font-family: font2;
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+        .p1 {
+            color: burlywood;
+            font-size: 2em;
+        }
+        .p2 {
+            font-family: 'Pacifico', cursive;
+            font-size:2em;
+        }*/
+    </style>
+</head>
+<body>
+    <!--inline>embedding-->
+    <!--id>class>type-->
+    <!--從上至下，從左至右-->
+    <h1 class="st1 font1">apple</h1>
+    <h2 class="st2 font2">orange</h2>
+    <h2 class="st1">banana</h2>
+    <h3 style="color:gray;" class="st1" id="col2">grape</h3>
+    <h3 class="col2 col1 txtde1 sty1">panda</h3>
+    <h4 class="col2 txtde1 size1 p2">monkey</h4>   
+    <p class="p1">This is a paragraph!</p>
+</body>
+</html>

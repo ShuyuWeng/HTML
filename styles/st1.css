@@ -1,0 +1,34 @@
+﻿.st1 {
+    color: brown;
+    text-transform: capitalize;
+}
+
+h4.st2 {
+    color: coral;
+    font-style: italic;
+}
+
+.col2 {
+    color: cadetblue
+}
+
+.col1 {
+    color: cornflowerblue
+}
+
+.under1 {
+    text-decoration: underline
+}
+
+.sty1 {
+    font-style: italic
+}
+
+.size1 {
+    font-size: 2em
+}
+
+.p1 {
+    color:blue;
+    text-decoration:underline;
+}
